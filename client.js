@@ -40,4 +40,45 @@ const employees = [
 // This is not a race. Everyone on your team should understand what is happening.
 // Ask questions when you don't.
 
-console.log( employees );
+console.log(employees);
+
+
+for (let i = 0; i < employees.length; i++) {
+  employeeName(employees[i]);
+}
+function employeeName(person) {
+
+  console.log(person.name);
+}
+
+for (let i = 0; i < employees.length; i++) {
+  numberPerson(employees[i]);
+}
+function numberPerson(person) {
+
+  console.log(person.employeeNumber);
+}
+
+for (let i = 0; i < employees.length; i++) {
+  cashMoney(employees[i]);
+}
+function cashMoney(person) {
+
+  console.log(person.annualSalary);
+}
+for (let i = 0; i < employees.length; i++) {
+  goodEnough(employees[i]);
+}
+function goodEnough(person) {
+
+  console.log(person.reviewRating);
+}
+
+let UpdatedWorkers = [
+  {
+    name: '',
+    bonusPercentage: '', 
+    totalCompensation: '', 
+    totalBonus: ''
+  }
+]
